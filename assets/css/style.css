@@ -8,16 +8,16 @@
 body {
   display: grid;
   padding: 0.5%;
-  height: 100vh;
-  width: 100vw;
+  height: 97vh;
+  width: 97vw;
   grid-template-columns: 0.1px 1fr 1fr 0.1px;
   grid-template-rows: 1fr;
   grid-template-areas: ". left_Section right_Section.";
   grid-column-gap: 0.5%;
-  height: 100vh;
-  width: 100vw;
-  width: 100vw;
-  height: 100vh;
+  height: 97vh;
+  width: 97vw;
+  width: 97vw;
+  height: 97vh;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .container {
