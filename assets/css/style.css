@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif; }
+
+
+body {
+  display: grid;
+  padding: 0.5%;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 0.1px 1fr 1fr 0.1px;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". left_Section right_Section.";
+  grid-column-gap: 0.5%;
+  height: 100vh;
+  width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.container {
+  grid-area: container;
+  margin: 0 10px;
+  display: grid;
+  height: 100%;
+  width: 20%;
+  max-height: 150px;
+  max-width: 150px;
+  float: left;
+  grid-template-columns: 0.1px 5fr 0.1px;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-areas: ". name . " ". img . " ". name_health .";
+  background-color: white;
+  border: 1px solid white; }
+
+.container .name {
+  grid-area: name;
+  text-align: center;
+  width: auto; }
+
+.container .img {
+  grid-area: img;
+  height: 80%;
+  width: 100%;
+  justify-self: center;
+  align-self: center; }
+
+.container .name_health {
+  grid-area: name_health;
+  justify-self: center;
+  align-self: center; }
+
+
+.left_Section {
+  grid-area: left_Section;
+  display: grid;
+  background: url(../images/star_Background.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: "1fr";
+  grid-template-rows: "2fr 2fr 0.5fr 2fr 0.5fr";
+  grid-template-areas: "player_Area" "enemy_Area" "fight" "defender_Area_Main" "comment_Area"; }
+
+.left_Section .player_Area {
+grid-area: player_Area;
+border: 1px solid white;
+display: grid;
+min-height: 200px; }
+
+.left_Section .player_Area .center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: " player_Title" "player_Staging_Area";
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white; }
+
+.left_Section .player_Area .player_Title {
+  color: white;
+  grid-area: player_Title;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .player_Area .player_Staging_Area {
+  width: 100%;
+  height: 100%;
+  grid-area: player_Staging_Area;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .enemy_Area {
+grid-area: enemy_Area;
+border: 1px solid white;
+display: grid;
+min-height: 200px; }
+
+.left_Section .enemy_Area .center1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: " enemy_Title" "enemy_Staging_Area";
+  justify-self: center;
+  align-self: center;
+  height: 100%;
+  width: 100%; }
+
+.left_Section .enemy_Area .enemy_Title {
+  color: white;
+  grid-area: enemy_Title;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .enemy_Area .enemy_Staging_Area {
+  width: 100%;
+  height: 100%;
+  grid-area: enemy_Staging_Area;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .fight {
+  grid-area: fight;
+  display: grid;
+  grid-template-columns: "1fr";
+  grid-template-rows: "1fr 1fr";
+  grid-template-areas: "fight_Title" "button_Fight";
+  border: 1px solid white; }
+
+.left_Section .fight .fight_Title {
+  color: white;
+  grid-area: fight_Title;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .fight .button_Fight {
+  grid-area: button_Fight;
+  justify-self: center;
+  align-self: center;
+  width: 20%;
+  height: auto; }
+
+.left_Section .defender_Area_Main {
+  grid-area: defender_Area_Main;
+  color: white;
+  border: 1px solid white;
+  display: grid;
+  min-height: 200px; }
+
+.left_Section .defender_Area_Main .center2 {
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  border: 1px white solid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: " defender_Title" "defender_Area"; }
+
+.left_Section .defender_Area_Main .center2 .defender_Title {
+  grid-area: defender_Title;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .defender_Area_Main .center2 .defender_Area {
+  grid-area: defender_Area;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .comment_Area {
+  display: grid;
+  grid-area: comment_Area;
+  grid-template-columns: "1fr";
+  grid-template-rows: "1fr 1fr 1fr";
+  grid-template-areas: "player_Text" "enemy_Text" "button_Reset";
+  border: 1px solid white;
+  color: white; }
+
+.left_Section .comment_Area .player_Text {
+  grid-area: player_Text;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .comment_Area .enemy_Text {
+  grid-area: enemy_Text;
+  justify-self: center;
+  align-self: center; }
+
+.left_Section .comment_Area .button_Reset {
+  grid-area: button_Reset;
+  justify-self: center;
+  align-self: center;
+  width: 20%;
+  height: auto;
+  display: none;
+  visibility: hidden;
+  color: black; }
+
+.right_Section {
+  grid-area: right_Section;
+  border: 1px solid white;
+  background: url(../images/star-wars-the-last-jedi-luke-skywalker-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-width: 740px) {
+   {
+    display: grid;
+    grid-template-columns: 0.1px 1fr 0.1px;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: ". right_Section ." ". left_Section .";
+    grid-column-gap: 0.5%;
+    height: 100vh;
+    width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: repeat; } }

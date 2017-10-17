@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Game</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+
+    
+  <body>
+    <!-- Sound -->
+     <audio autoplay loop>
+      <source src="assets/audio/Star Wars Main Theme (Full).mp3" type="audio/mpeg">
+     </audio>
+
+     <div class = "left_Section">
+       <div class="player_Area" data-counter = "4">
+
+          <!-- Div container for centering -->
+          <div class="center">
+            <h1 class = "player_Title"> Players available to choose.</h1>
+            <div class="player_Staging_Area">
+              <!-- 1st Character Container -->
+              <div class="container player-char first_Character" data-header = "Rey">
+                <p class = "name">Rey</p>
+                <img class = "img name_1_Img img-responsive" src="assets/images/rey.jpg" alt="Rey">
+                <p class = "name_health name_health_0"  data-name = "Rey"></p>
+              </div>
+
+              <!-- 2nd Character Container -->
+              <div class="container player-char second_Character" data-header = "Finn">
+                <p class = "name">Finn</p>
+                <img class = "img name_2_img img-responsive" src="assets/images/finn.jpeg" alt="Finn">
+                <p class = "name_health  name_health_1" data-name = "Finn"></p>
+              </div>
+
+              <!-- 3rd Character Container -->
+              <div class="container player-char third_Character" data-header = "Kylo" >
+                <p class = "name"> Kylo Ren </p>
+                <img class = "img name_3_img img-responsive" src="assets/images/kylo.jpg" alt="Kylo Renn">
+                <p class = "name_health  name_health_2"  data-name = "Kylo"></p>
+              </div>
+
+              <!-- 4th Character Container -->
+              <div class="container player-char fourth_Character" data-header = "Captain">
+                <p class = "name">Captain Phasma</p>
+                <img class = "img name_4_img img-responsive" src="assets/images/phasma.jpg" alt="Captain Phasma">
+                <p class = "name_health  name_health_3"  data-name = "Captain"></p>
+              </div>
+            </div>
+
+          </div>
+       <!-- End of player staging area-->
+        </div>
+
+        <!-- Enemies are placed here before selection of which enemy to attack -->
+         <div class="enemy_Area">
+           <div class="center1">
+             <h1 class = "enemy_Title"> Enemies available to attack </h1>
+             <div class="enemy_Staging_Area"> </div>
+           </div>
+         </div>
+
+        <!-- Fight Title with button -->
+        <div class="fight">
+          <h1 class = "fight_Title">Fight Section</h1>
+          <button type="button" class="button_Fight"> Attack </button>
+        </div>
+
+        <!-- Defender is placed here -->
+        <div class="defender_Area_Main">
+          <div class="center2">
+            <h1 class = "defender_Title"> Defender </h1>
+            <div class="defender_Area"> </div>
+          </div>
+        </div>
+
+        <!-- Comments and Restart button -->
+        <div class="comment_Area">
+          <h1 class = "player_Text">Select a Character to begin</h1>
+          <h1 class = "enemy_Text">May the force be with you!</h1>
+          <button type="button" class="button_Reset"> Restart </button>
+        </div>
+
+
+
+     </div>
+
+    
+     <div class = "right_Section">
+
+     </div>
+
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+       <script type="text/javascript" src = "assets/javascript/game.js"></script>
+     </head>
+
+  </body>
+</html>
